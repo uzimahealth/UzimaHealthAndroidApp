@@ -1,0 +1,48 @@
+{
+
+  "schedule": [{
+    "date": "2047-05-17",
+    "groups": [{
+      "time": "10:00 am",
+      "sessions": [{
+        "name": "St. Matthews Hospital",
+        "location": "Nairobi Kenya",
+        "description": "The founders of St. Matthews Hospital were convinced that it was possible to provide quality and cost-effective health care in a thoroughly professional but personalized way.Long before the debate on fixed consultant fees started, the hospital had already persuaded its consultants to adopt a very competitive fixed fee structure which is binding on these partner consultants.",
+        "speakerNames": ["St. Matthews Hospital"],
+        "timeStart": "Westlands Road",
+        "timeEnd": "Nairobi",
+        "tracks": ["Services"],
+        "id": "15"
+      }]
+    }]
+  }],
+
+
+  "speakers": [{
+    "name": "St. Matthews Hospital",
+    "profilePic": "assets/img/speakers/mathews-hospital.jpg",
+    "twitter": "ionicframework",
+    "about": "St. Matthews Hospital - Where Quality is the priority.",
+    "location": "Nairobi",
+    "email": "julianashitsukane@gmail.com",
+    "phone": "+254717009013",
+    "id": "1"
+  } ],
+
+
+  "map": [{
+    "name": "St. Matthews Hosital",
+    "lat": 43.071584,
+    "lng": -89.380120,
+    "center": true
+  }, {
+    "name": "St. Matthews HositalHQ",
+    "lat": 43.074395,
+    "lng": -89.381056
+  }, {
+    "name": "St. Matthews Hosital",
+    "lat": 43.07336,
+    "lng": -89.38335
+  }]
+
+}

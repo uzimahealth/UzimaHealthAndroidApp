@@ -1,0 +1,139 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>Signup</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content class="login-page">
+
+	<div class="logo">
+		<img src="assets/img/slide-3.jpg" alt="Ionic Logo">
+	</div>
+
+	<form #signupForm="ngForm" >
+		<ion-list no-lines>
+			
+			<ion-item>
+				<ion-label stacked color="primary">FirstName</ion-label>
+				<ion-input [(ngModel)]="signup2.firstname" name="firstname" type="text" #firstname="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="firstname.valid || submitted == false" color="danger" padding-left>
+				FirstName is required
+			</p>
+			<ion-item>
+				<ion-label stacked color="primary">Surname</ion-label>
+				<ion-input [(ngModel)] ="signup2.surname" name="surname" type="text" #surname="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="surname.valid || submitted == false" color="danger" padding-left>
+				Surname is required
+			</p>
+			    <ion-item>
+        <ion-icon name="pin" item-start></ion-icon>
+        <ion-label> Select your County </ion-label>
+        <ion-select name="county" [(ngModel)]="signup2.county">
+          <ion-option value="nairobi" selected>Nairobi</ion-option>
+          <ion-option value="nakuru">Nakuru</ion-option>
+		     <ion-option value="kiambu">Kiambu</ion-option>
+          <ion-option value="kisumu">Kisumu</ion-option>
+          <ion-option value="bungoma">Bungoma</ion-option>
+		   <ion-option value="kakamega">Kakamega</ion-option>
+		    <ion-option value="eldoret">Eldoret</ion-option>
+			 <ion-option value="mombasa">Mombasa</ion-option>
+        </ion-select>
+      </ion-item>
+	  	   <ion-item >
+        <ion-icon name="pin" item-start></ion-icon>
+        <ion-label> Select your town </ion-label>
+        <ion-select  name="town" [(ngModel)]="signup2.town">
+          <ion-option value="westlands" selected>Westlands</ion-option>
+          <ion-option value="donholm">Donholm</ion-option>
+		     <ion-option value="cabbanas">Cabbanas</ion-option>
+          <ion-option value="upperhill">Upperhill</ion-option>
+		   <ion-option value="nakuru town">Nakuru Town</ion-option>
+			 <ion-option value="thika town">Thika town</ion-option>
+			  <ion-option value="Limuru town">Limuru</ion-option>
+			   <ion-option value="kisumu town">Kisumu Town</ion-option>
+			 <ion-option value="majengo">Majengo</ion-option>
+          <ion-option value="bungoma town">Bungoma CBD</ion-option>
+		   <ion-option value="mukumu">Mukumu</ion-option>
+		    <ion-option value="kapsoya">Kapsoya</ion-option>
+			 <ion-option value="langas">Langas</ion-option>
+			 <ion-option value="mombasa town">Mombasa town</ion-option>
+			
+			 
+        </ion-select>
+      </ion-item>
+			<ion-item>
+				<ion-label stacked color="primary">Street</ion-label>
+				<ion-input [(ngModel)] ="signup2.street" name="street" type="text" #street="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="street.valid || submitted == false" color="danger" padding-left>
+				street is required
+			</p>
+			<ion-item>
+				<ion-label stacked color="primary">Building</ion-label>
+				<ion-input [(ngModel)] ="signup2.building" name="building" type="text" #building="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="building.valid || submitted == false" color="danger" padding-left>
+				building is required
+			</p>
+			<ion-item>
+				<ion-label stacked color="primary">Landmark</ion-label>
+				<ion-input [(ngModel)] ="signup2.landmark" name="landmark" type="text" #landmark="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="landmark.valid || submitted == false" color="danger" padding-left>
+				landmark is required
+			</p>
+				<ion-item>
+				<ion-label stacked color="primary">Phone</ion-label>
+				<ion-input [(ngModel)]="signup2.phone" name="phone" type="text" #phone="ngModel" required>
+				</ion-input>
+			</ion-item>
+			
+			<p ion-text [hidden]="phone.valid || submitted == false" color="danger" padding-left>
+				Phone is required
+			</p>
+				<ion-item>
+				<ion-label stacked color="primary">Email</ion-label>
+				<ion-input [(ngModel)]="signup2.email" name="email" type="text" #email="ngModel" required>
+				</ion-input>
+			</ion-item>
+			
+			<p ion-text [hidden]="email.valid || submitted == false" color="danger" padding-left>
+				Email is required
+			</p>
+			
+			<ion-item>
+				<ion-label stacked color="primary">Username</ion-label>
+				<ion-input [(ngModel)]="signup.username" name="username" type="text" #username="ngModel" required>
+				</ion-input>
+			</ion-item>
+			
+			<p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>
+				Username is required
+			</p>
+
+			<ion-item>
+				<ion-label stacked color="primary">Password</ion-label>
+				<ion-input [(ngModel)]="signup.password" name="password" type="password" #password="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>
+				Password is required
+			</p>
+		</ion-list>
+
+		<div padding>
+			<button ion-button (click)="onSignup(signupForm)" type="submit" block>Create</button>
+		</div>
+	</form>
+
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">Skip</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
+      <h2 class="slide-title">
+        Welcome to  <font color ="blue" type="bold">Uzima Health</font>
+      </h2>
+      <p>
+        <b>Your Ultimate Health Care Assistant</b>
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>
+      <h2 class="slide-title" >What is Uzima Health?</h2>
+      <p><b>Uzima Health</b> enables you to be able to share your health and medical condition history with your Doctor from the comfort of your mobile phone.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>
+      <h2 class="slide-title">How do i use it?</h2>
+      <p><b>Sign up for your account and register with your hospital </b>Once you have signed up you can edit your profile and be able to select the services you require</p>
+    </ion-slide>
+<ion-slide>
+<img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>
+<p><b>How do i contact the hospital using the app?</b></p>
+<p>in our contact us page you can be able to find our various contacts for our different branches</p>
+</ion-slide>
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">Ready to use the app?</h2>
+      <button ion-button icon-end large clear (click)="startApp()">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
